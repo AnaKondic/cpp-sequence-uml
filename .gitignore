@@ -1,0 +1,19 @@
+ 
+# Python
+__pycache__/
+*.pyc
+
+# ANTLR output
+antlr/generated/
+
+# Temp files
+*.log
+temp.*
+
+# UML dijagrami
+*.png
+*.uml
+
+# OS-specific
+.DS_Store
+Thumbs.db
