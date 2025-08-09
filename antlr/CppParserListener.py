@@ -44,6 +44,15 @@ class CppParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CppParser#accessModifier.
+    def enterAccessModifier(self, ctx:CppParser.AccessModifierContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#accessModifier.
+    def exitAccessModifier(self, ctx:CppParser.AccessModifierContext):
+        pass
+
+
     # Enter a parse tree produced by CppParser#methodDeclaration.
     def enterMethodDeclaration(self, ctx:CppParser.MethodDeclarationContext):
         pass
@@ -122,6 +131,60 @@ class CppParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CppParser#expression.
     def exitExpression(self, ctx:CppParser.ExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#shiftExpression.
+    def enterShiftExpression(self, ctx:CppParser.ShiftExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#shiftExpression.
+    def exitShiftExpression(self, ctx:CppParser.ShiftExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#additiveExpression.
+    def enterAdditiveExpression(self, ctx:CppParser.AdditiveExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#additiveExpression.
+    def exitAdditiveExpression(self, ctx:CppParser.AdditiveExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#multiplicativeExpression.
+    def enterMultiplicativeExpression(self, ctx:CppParser.MultiplicativeExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#multiplicativeExpression.
+    def exitMultiplicativeExpression(self, ctx:CppParser.MultiplicativeExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#postfixExpression.
+    def enterPostfixExpression(self, ctx:CppParser.PostfixExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#postfixExpression.
+    def exitPostfixExpression(self, ctx:CppParser.PostfixExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#postfixOp.
+    def enterPostfixOp(self, ctx:CppParser.PostfixOpContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#postfixOp.
+    def exitPostfixOp(self, ctx:CppParser.PostfixOpContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#primaryExpression.
+    def enterPrimaryExpression(self, ctx:CppParser.PrimaryExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#primaryExpression.
+    def exitPrimaryExpression(self, ctx:CppParser.PrimaryExpressionContext):
         pass
 
 

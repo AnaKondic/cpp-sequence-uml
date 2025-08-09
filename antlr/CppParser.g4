@@ -14,11 +14,17 @@ preprocessorDirective
 
 // Deklaracija klase
 classDeclaration
-    : CLASS ID LBRACE classBody RBRACE
+    : CLASS ID LBRACE classBody RBRACE SEMI
     ;
 
 classBody
-    : (methodDeclaration | variableDeclaration)*
+    : (accessModifier | methodDeclaration | variableDeclaration)*
+    ;
+
+// Pristupni modifikator
+accessModifier
+    : PUBLIC COLON
+    | PRIVATE COLON
     ;
 
 // Deklaracija metode 
@@ -51,7 +57,8 @@ statement
     : methodCall SEMI
     | objectDeclaration SEMI
     | assignement SEMI
-    | RETURN expression SEMI
+    | variableDeclaration SEMI
+    | RETURN expression? SEMI
     ;
 
 // Poziv metode
@@ -63,11 +70,49 @@ argumentList
     : expression (COMMA expression)*
     ;
 
-// Pravilo za izraz
+// Pravilo za izraze (hijerarhijski)
+// expression
+//     : 
+//     | expression PLUS expression
+//     | expression MINUS expression
+//     | expression STAR expression
+//     | expression LEFT_SHIFT expression
+//     | expression COLONCOLON expression
+//     | ID
+//     | NUMBER
+//     | STRING_LITERAL
+//     ;
+
 expression
+    : shiftExpression
+    ;
+
+shiftExpression
+    : additiveExpression (LEFT_SHIFT additiveExpression)*
+    ;
+
+additiveExpression
+    : multiplicativeExpression ((PLUS | MINUS) multiplicativeExpression)*
+    ;
+
+multiplicativeExpression
+    : postfixExpression ((STAR | DIV) postfixExpression)*
+    ;
+
+postfixExpression
+    : primaryExpression postfixOp*
+    ;
+
+postfixOp
+    : COLONCOLON ID
+    | DOT ID
+    ;
+
+primaryExpression
     : ID
-    | NUMBER
     | STRING_LITERAL
+    | NUMBER
+    | LPAREN expression RPAREN
     ;
 
 // Pravilo za dodjelu

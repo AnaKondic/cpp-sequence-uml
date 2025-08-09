@@ -4,14 +4,14 @@ class UMLGenerator:
         self.lines = ["@startuml"]
         self.participants = set()
     
-    def add_participans(self, name):
+    def add_participant(self, name):
         if name not in self.participants:
             self.participants.add(name)
             self.lines.append(f"participant {name}")
     
     def add_call(self, caller, callee, method_name):
-        self.add_participans(caller)
-        self.add_participans(callee)
+        self.add_participant(caller)
+        self.add_participant(callee)
         self.lines.append(f"{caller} -> {callee} : {method_name}()")
 
     def add_return(self, from_obj, to_obj, value=""):

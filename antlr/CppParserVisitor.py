@@ -29,6 +29,11 @@ class CppParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CppParser#accessModifier.
+    def visitAccessModifier(self, ctx:CppParser.AccessModifierContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CppParser#methodDeclaration.
     def visitMethodDeclaration(self, ctx:CppParser.MethodDeclarationContext):
         return self.visitChildren(ctx)
@@ -71,6 +76,36 @@ class CppParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CppParser#expression.
     def visitExpression(self, ctx:CppParser.ExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#shiftExpression.
+    def visitShiftExpression(self, ctx:CppParser.ShiftExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#additiveExpression.
+    def visitAdditiveExpression(self, ctx:CppParser.AdditiveExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#multiplicativeExpression.
+    def visitMultiplicativeExpression(self, ctx:CppParser.MultiplicativeExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#postfixExpression.
+    def visitPostfixExpression(self, ctx:CppParser.PostfixExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#postfixOp.
+    def visitPostfixOp(self, ctx:CppParser.PostfixOpContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#primaryExpression.
+    def visitPrimaryExpression(self, ctx:CppParser.PrimaryExpressionContext):
         return self.visitChildren(ctx)
 
 

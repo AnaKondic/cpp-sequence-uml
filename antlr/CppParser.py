@@ -10,57 +10,84 @@ else:
 
 def serializedATN():
     return [
-        4,1,37,156,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,42,228,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
-        2,14,7,14,1,0,1,0,1,0,1,0,5,0,35,8,0,10,0,12,0,38,9,0,1,0,1,0,1,
-        1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,5,3,55,8,3,10,
-        3,12,3,58,9,3,1,4,3,4,61,8,4,1,4,1,4,1,4,1,4,3,4,67,8,4,1,4,1,4,
-        1,4,5,4,72,8,4,10,4,12,4,75,9,4,1,4,1,4,1,5,1,5,1,5,1,5,3,5,83,8,
-        5,1,5,1,5,1,5,5,5,88,8,5,10,5,12,5,91,9,5,1,5,1,5,1,6,1,6,1,6,5,
-        6,98,8,6,10,6,12,6,101,9,6,1,7,1,7,3,7,105,8,7,1,7,1,7,1,8,1,8,1,
-        8,1,8,3,8,113,8,8,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,
-        9,1,9,3,9,128,8,9,1,10,1,10,1,10,1,10,1,10,3,10,135,8,10,1,10,1,
-        10,1,11,1,11,1,11,5,11,142,8,11,10,11,12,11,145,9,11,1,12,1,12,1,
-        13,1,13,1,13,1,13,1,14,1,14,1,14,1,14,0,0,15,0,2,4,6,8,10,12,14,
-        16,18,20,22,24,26,28,0,2,2,0,4,10,32,32,1,0,32,34,159,0,36,1,0,0,
-        0,2,41,1,0,0,0,4,46,1,0,0,0,6,56,1,0,0,0,8,60,1,0,0,0,10,78,1,0,
-        0,0,12,94,1,0,0,0,14,104,1,0,0,0,16,108,1,0,0,0,18,127,1,0,0,0,20,
-        129,1,0,0,0,22,138,1,0,0,0,24,146,1,0,0,0,26,148,1,0,0,0,28,152,
-        1,0,0,0,30,35,3,2,1,0,31,35,3,4,2,0,32,35,3,10,5,0,33,35,3,18,9,
-        0,34,30,1,0,0,0,34,31,1,0,0,0,34,32,1,0,0,0,34,33,1,0,0,0,35,38,
-        1,0,0,0,36,34,1,0,0,0,36,37,1,0,0,0,37,39,1,0,0,0,38,36,1,0,0,0,
-        39,40,5,0,0,1,40,1,1,0,0,0,41,42,5,17,0,0,42,43,5,30,0,0,43,44,5,
-        32,0,0,44,45,5,31,0,0,45,3,1,0,0,0,46,47,5,1,0,0,47,48,5,32,0,0,
-        48,49,5,18,0,0,49,50,3,6,3,0,50,51,5,19,0,0,51,5,1,0,0,0,52,55,3,
-        8,4,0,53,55,3,16,8,0,54,52,1,0,0,0,54,53,1,0,0,0,55,58,1,0,0,0,56,
-        54,1,0,0,0,56,57,1,0,0,0,57,7,1,0,0,0,58,56,1,0,0,0,59,61,5,2,0,
-        0,60,59,1,0,0,0,60,61,1,0,0,0,61,62,1,0,0,0,62,63,3,14,7,0,63,64,
-        5,32,0,0,64,66,5,20,0,0,65,67,3,12,6,0,66,65,1,0,0,0,66,67,1,0,0,
-        0,67,68,1,0,0,0,68,69,5,21,0,0,69,73,5,18,0,0,70,72,3,18,9,0,71,
-        70,1,0,0,0,72,75,1,0,0,0,73,71,1,0,0,0,73,74,1,0,0,0,74,76,1,0,0,
-        0,75,73,1,0,0,0,76,77,5,19,0,0,77,9,1,0,0,0,78,79,3,14,7,0,79,80,
-        5,32,0,0,80,82,5,20,0,0,81,83,3,12,6,0,82,81,1,0,0,0,82,83,1,0,0,
-        0,83,84,1,0,0,0,84,85,5,21,0,0,85,89,5,18,0,0,86,88,3,18,9,0,87,
-        86,1,0,0,0,88,91,1,0,0,0,89,87,1,0,0,0,89,90,1,0,0,0,90,92,1,0,0,
-        0,91,89,1,0,0,0,92,93,5,19,0,0,93,11,1,0,0,0,94,99,3,16,8,0,95,96,
-        5,23,0,0,96,98,3,16,8,0,97,95,1,0,0,0,98,101,1,0,0,0,99,97,1,0,0,
-        0,99,100,1,0,0,0,100,13,1,0,0,0,101,99,1,0,0,0,102,103,5,11,0,0,
-        103,105,5,27,0,0,104,102,1,0,0,0,104,105,1,0,0,0,105,106,1,0,0,0,
-        106,107,7,0,0,0,107,15,1,0,0,0,108,109,3,14,7,0,109,112,5,32,0,0,
-        110,111,5,25,0,0,111,113,3,24,12,0,112,110,1,0,0,0,112,113,1,0,0,
-        0,113,17,1,0,0,0,114,115,3,20,10,0,115,116,5,22,0,0,116,128,1,0,
-        0,0,117,118,3,28,14,0,118,119,5,22,0,0,119,128,1,0,0,0,120,121,3,
-        26,13,0,121,122,5,22,0,0,122,128,1,0,0,0,123,124,5,12,0,0,124,125,
-        3,24,12,0,125,126,5,22,0,0,126,128,1,0,0,0,127,114,1,0,0,0,127,117,
-        1,0,0,0,127,120,1,0,0,0,127,123,1,0,0,0,128,19,1,0,0,0,129,130,5,
-        32,0,0,130,131,5,24,0,0,131,132,5,32,0,0,132,134,5,20,0,0,133,135,
-        3,22,11,0,134,133,1,0,0,0,134,135,1,0,0,0,135,136,1,0,0,0,136,137,
-        5,21,0,0,137,21,1,0,0,0,138,143,3,24,12,0,139,140,5,23,0,0,140,142,
-        3,24,12,0,141,139,1,0,0,0,142,145,1,0,0,0,143,141,1,0,0,0,143,144,
-        1,0,0,0,144,23,1,0,0,0,145,143,1,0,0,0,146,147,7,1,0,0,147,25,1,
-        0,0,0,148,149,5,32,0,0,149,150,5,25,0,0,150,151,3,24,12,0,151,27,
-        1,0,0,0,152,153,5,32,0,0,153,154,5,32,0,0,154,29,1,0,0,0,15,34,36,
-        54,56,60,66,73,82,89,99,104,112,127,134,143
+        2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
+        7,20,2,21,7,21,1,0,1,0,1,0,1,0,5,0,49,8,0,10,0,12,0,52,9,0,1,0,1,
+        0,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,5,
+        3,71,8,3,10,3,12,3,74,9,3,1,4,1,4,1,4,1,4,3,4,80,8,4,1,5,3,5,83,
+        8,5,1,5,1,5,1,5,1,5,3,5,89,8,5,1,5,1,5,1,5,5,5,94,8,5,10,5,12,5,
+        97,9,5,1,5,1,5,1,6,1,6,1,6,1,6,3,6,105,8,6,1,6,1,6,1,6,5,6,110,8,
+        6,10,6,12,6,113,9,6,1,6,1,6,1,7,1,7,1,7,5,7,120,8,7,10,7,12,7,123,
+        9,7,1,8,1,8,3,8,127,8,8,1,8,1,8,1,9,1,9,1,9,1,9,3,9,135,8,9,1,10,
+        1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,
+        3,10,151,8,10,1,10,3,10,154,8,10,1,11,1,11,1,11,1,11,1,11,3,11,161,
+        8,11,1,11,1,11,1,12,1,12,1,12,5,12,168,8,12,10,12,12,12,171,9,12,
+        1,13,1,13,1,14,1,14,1,14,5,14,178,8,14,10,14,12,14,181,9,14,1,15,
+        1,15,1,15,5,15,186,8,15,10,15,12,15,189,9,15,1,16,1,16,1,16,5,16,
+        194,8,16,10,16,12,16,197,9,16,1,17,1,17,5,17,201,8,17,10,17,12,17,
+        204,9,17,1,18,1,18,1,18,1,18,3,18,210,8,18,1,19,1,19,1,19,1,19,1,
+        19,1,19,1,19,3,19,219,8,19,1,20,1,20,1,20,1,20,1,21,1,21,1,21,1,
+        21,0,0,22,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,
+        40,42,0,3,2,0,4,10,37,37,1,0,26,27,1,0,28,29,236,0,50,1,0,0,0,2,
+        55,1,0,0,0,4,60,1,0,0,0,6,72,1,0,0,0,8,79,1,0,0,0,10,82,1,0,0,0,
+        12,100,1,0,0,0,14,116,1,0,0,0,16,126,1,0,0,0,18,130,1,0,0,0,20,153,
+        1,0,0,0,22,155,1,0,0,0,24,164,1,0,0,0,26,172,1,0,0,0,28,174,1,0,
+        0,0,30,182,1,0,0,0,32,190,1,0,0,0,34,198,1,0,0,0,36,209,1,0,0,0,
+        38,218,1,0,0,0,40,220,1,0,0,0,42,224,1,0,0,0,44,49,3,2,1,0,45,49,
+        3,4,2,0,46,49,3,12,6,0,47,49,3,20,10,0,48,44,1,0,0,0,48,45,1,0,0,
+        0,48,46,1,0,0,0,48,47,1,0,0,0,49,52,1,0,0,0,50,48,1,0,0,0,50,51,
+        1,0,0,0,51,53,1,0,0,0,52,50,1,0,0,0,53,54,5,0,0,1,54,1,1,0,0,0,55,
+        56,5,17,0,0,56,57,5,35,0,0,57,58,5,37,0,0,58,59,5,36,0,0,59,3,1,
+        0,0,0,60,61,5,1,0,0,61,62,5,37,0,0,62,63,5,18,0,0,63,64,3,6,3,0,
+        64,65,5,19,0,0,65,66,5,22,0,0,66,5,1,0,0,0,67,71,3,8,4,0,68,71,3,
+        10,5,0,69,71,3,18,9,0,70,67,1,0,0,0,70,68,1,0,0,0,70,69,1,0,0,0,
+        71,74,1,0,0,0,72,70,1,0,0,0,72,73,1,0,0,0,73,7,1,0,0,0,74,72,1,0,
+        0,0,75,76,5,2,0,0,76,80,5,31,0,0,77,78,5,3,0,0,78,80,5,31,0,0,79,
+        75,1,0,0,0,79,77,1,0,0,0,80,9,1,0,0,0,81,83,5,2,0,0,82,81,1,0,0,
+        0,82,83,1,0,0,0,83,84,1,0,0,0,84,85,3,16,8,0,85,86,5,37,0,0,86,88,
+        5,20,0,0,87,89,3,14,7,0,88,87,1,0,0,0,88,89,1,0,0,0,89,90,1,0,0,
+        0,90,91,5,21,0,0,91,95,5,18,0,0,92,94,3,20,10,0,93,92,1,0,0,0,94,
+        97,1,0,0,0,95,93,1,0,0,0,95,96,1,0,0,0,96,98,1,0,0,0,97,95,1,0,0,
+        0,98,99,5,19,0,0,99,11,1,0,0,0,100,101,3,16,8,0,101,102,5,37,0,0,
+        102,104,5,20,0,0,103,105,3,14,7,0,104,103,1,0,0,0,104,105,1,0,0,
+        0,105,106,1,0,0,0,106,107,5,21,0,0,107,111,5,18,0,0,108,110,3,20,
+        10,0,109,108,1,0,0,0,110,113,1,0,0,0,111,109,1,0,0,0,111,112,1,0,
+        0,0,112,114,1,0,0,0,113,111,1,0,0,0,114,115,5,19,0,0,115,13,1,0,
+        0,0,116,121,3,18,9,0,117,118,5,23,0,0,118,120,3,18,9,0,119,117,1,
+        0,0,0,120,123,1,0,0,0,121,119,1,0,0,0,121,122,1,0,0,0,122,15,1,0,
+        0,0,123,121,1,0,0,0,124,125,5,11,0,0,125,127,5,32,0,0,126,124,1,
+        0,0,0,126,127,1,0,0,0,127,128,1,0,0,0,128,129,7,0,0,0,129,17,1,0,
+        0,0,130,131,3,16,8,0,131,134,5,37,0,0,132,133,5,25,0,0,133,135,3,
+        26,13,0,134,132,1,0,0,0,134,135,1,0,0,0,135,19,1,0,0,0,136,137,3,
+        22,11,0,137,138,5,22,0,0,138,154,1,0,0,0,139,140,3,42,21,0,140,141,
+        5,22,0,0,141,154,1,0,0,0,142,143,3,40,20,0,143,144,5,22,0,0,144,
+        154,1,0,0,0,145,146,3,18,9,0,146,147,5,22,0,0,147,154,1,0,0,0,148,
+        150,5,12,0,0,149,151,3,26,13,0,150,149,1,0,0,0,150,151,1,0,0,0,151,
+        152,1,0,0,0,152,154,5,22,0,0,153,136,1,0,0,0,153,139,1,0,0,0,153,
+        142,1,0,0,0,153,145,1,0,0,0,153,148,1,0,0,0,154,21,1,0,0,0,155,156,
+        5,37,0,0,156,157,5,24,0,0,157,158,5,37,0,0,158,160,5,20,0,0,159,
+        161,3,24,12,0,160,159,1,0,0,0,160,161,1,0,0,0,161,162,1,0,0,0,162,
+        163,5,21,0,0,163,23,1,0,0,0,164,169,3,26,13,0,165,166,5,23,0,0,166,
+        168,3,26,13,0,167,165,1,0,0,0,168,171,1,0,0,0,169,167,1,0,0,0,169,
+        170,1,0,0,0,170,25,1,0,0,0,171,169,1,0,0,0,172,173,3,28,14,0,173,
+        27,1,0,0,0,174,179,3,30,15,0,175,176,5,33,0,0,176,178,3,30,15,0,
+        177,175,1,0,0,0,178,181,1,0,0,0,179,177,1,0,0,0,179,180,1,0,0,0,
+        180,29,1,0,0,0,181,179,1,0,0,0,182,187,3,32,16,0,183,184,7,1,0,0,
+        184,186,3,32,16,0,185,183,1,0,0,0,186,189,1,0,0,0,187,185,1,0,0,
+        0,187,188,1,0,0,0,188,31,1,0,0,0,189,187,1,0,0,0,190,195,3,34,17,
+        0,191,192,7,2,0,0,192,194,3,34,17,0,193,191,1,0,0,0,194,197,1,0,
+        0,0,195,193,1,0,0,0,195,196,1,0,0,0,196,33,1,0,0,0,197,195,1,0,0,
+        0,198,202,3,38,19,0,199,201,3,36,18,0,200,199,1,0,0,0,201,204,1,
+        0,0,0,202,200,1,0,0,0,202,203,1,0,0,0,203,35,1,0,0,0,204,202,1,0,
+        0,0,205,206,5,32,0,0,206,210,5,37,0,0,207,208,5,24,0,0,208,210,5,
+        37,0,0,209,205,1,0,0,0,209,207,1,0,0,0,210,37,1,0,0,0,211,219,5,
+        37,0,0,212,219,5,39,0,0,213,219,5,38,0,0,214,215,5,20,0,0,215,216,
+        3,26,13,0,216,217,5,21,0,0,217,219,1,0,0,0,218,211,1,0,0,0,218,212,
+        1,0,0,0,218,213,1,0,0,0,218,214,1,0,0,0,219,39,1,0,0,0,220,221,5,
+        37,0,0,221,222,5,25,0,0,222,223,3,26,13,0,223,41,1,0,0,0,224,225,
+        5,37,0,0,225,226,5,37,0,0,226,43,1,0,0,0,23,48,50,70,72,79,82,88,
+        95,104,111,121,126,134,150,153,160,169,179,187,195,202,209,218
     ]
 
 class CppParser ( Parser ):
@@ -77,38 +104,47 @@ class CppParser ( Parser ):
                      "'int'", "'float'", "'double'", "'char'", "'bool'", 
                      "'string'", "'std'", "'return'", "'new'", "'if'", "'else'", 
                      "'while'", "'#include'", "'{'", "'}'", "'('", "')'", 
-                     "';'", "','", "'.'", "'='", "'\"'", "'::'", "'<<'", 
-                     "'>>'", "'<'", "'>'" ]
+                     "';'", "','", "'.'", "'='", "'+'", "'-'", "'*'", "'/'", 
+                     "'\"'", "':'", "'::'", "'<<'", "'>>'", "'<'", "'>'" ]
 
     symbolicNames = [ "<INVALID>", "CLASS", "PUBLIC", "PRIVATE", "VOID", 
                       "INT", "FLOAT", "DOUBLE", "CHAR", "BOOL", "STRING", 
                       "STD", "RETURN", "NEW", "IF", "ELSE", "WHILE", "INCLUDE", 
                       "LBRACE", "RBRACE", "LPAREN", "RPAREN", "SEMI", "COMMA", 
-                      "DOT", "ASSIGN", "QUOTE", "COLONCOLON", "LEFT_SHIFT", 
-                      "RIGHT_SHIFT", "LT", "GT", "ID", "NUMBER", "STRING_LITERAL", 
-                      "LINE_COMMENT", "BLOCK_COMMENT", "WS" ]
+                      "DOT", "ASSIGN", "PLUS", "MINUS", "STAR", "DIV", "QUOTE", 
+                      "COLON", "COLONCOLON", "LEFT_SHIFT", "RIGHT_SHIFT", 
+                      "LT", "GT", "ID", "NUMBER", "STRING_LITERAL", "LINE_COMMENT", 
+                      "BLOCK_COMMENT", "WS" ]
 
     RULE_program = 0
     RULE_preprocessorDirective = 1
     RULE_classDeclaration = 2
     RULE_classBody = 3
-    RULE_methodDeclaration = 4
-    RULE_functionDefinition = 5
-    RULE_parameterList = 6
-    RULE_type = 7
-    RULE_variableDeclaration = 8
-    RULE_statement = 9
-    RULE_methodCall = 10
-    RULE_argumentList = 11
-    RULE_expression = 12
-    RULE_assignement = 13
-    RULE_objectDeclaration = 14
+    RULE_accessModifier = 4
+    RULE_methodDeclaration = 5
+    RULE_functionDefinition = 6
+    RULE_parameterList = 7
+    RULE_type = 8
+    RULE_variableDeclaration = 9
+    RULE_statement = 10
+    RULE_methodCall = 11
+    RULE_argumentList = 12
+    RULE_expression = 13
+    RULE_shiftExpression = 14
+    RULE_additiveExpression = 15
+    RULE_multiplicativeExpression = 16
+    RULE_postfixExpression = 17
+    RULE_postfixOp = 18
+    RULE_primaryExpression = 19
+    RULE_assignement = 20
+    RULE_objectDeclaration = 21
 
     ruleNames =  [ "program", "preprocessorDirective", "classDeclaration", 
-                   "classBody", "methodDeclaration", "functionDefinition", 
+                   "classBody", "accessModifier", "methodDeclaration", "functionDefinition", 
                    "parameterList", "type", "variableDeclaration", "statement", 
-                   "methodCall", "argumentList", "expression", "assignement", 
-                   "objectDeclaration" ]
+                   "methodCall", "argumentList", "expression", "shiftExpression", 
+                   "additiveExpression", "multiplicativeExpression", "postfixExpression", 
+                   "postfixOp", "primaryExpression", "assignement", "objectDeclaration" ]
 
     EOF = Token.EOF
     CLASS=1
@@ -136,18 +172,23 @@ class CppParser ( Parser ):
     COMMA=23
     DOT=24
     ASSIGN=25
-    QUOTE=26
-    COLONCOLON=27
-    LEFT_SHIFT=28
-    RIGHT_SHIFT=29
-    LT=30
-    GT=31
-    ID=32
-    NUMBER=33
-    STRING_LITERAL=34
-    LINE_COMMENT=35
-    BLOCK_COMMENT=36
-    WS=37
+    PLUS=26
+    MINUS=27
+    STAR=28
+    DIV=29
+    QUOTE=30
+    COLON=31
+    COLONCOLON=32
+    LEFT_SHIFT=33
+    RIGHT_SHIFT=34
+    LT=35
+    GT=36
+    ID=37
+    NUMBER=38
+    STRING_LITERAL=39
+    LINE_COMMENT=40
+    BLOCK_COMMENT=41
+    WS=42
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -223,39 +264,39 @@ class CppParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 36
+            self.state = 50
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4295106546) != 0):
-                self.state = 34
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 137439092722) != 0):
+                self.state = 48
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
                 if la_ == 1:
-                    self.state = 30
+                    self.state = 44
                     self.preprocessorDirective()
                     pass
 
                 elif la_ == 2:
-                    self.state = 31
+                    self.state = 45
                     self.classDeclaration()
                     pass
 
                 elif la_ == 3:
-                    self.state = 32
+                    self.state = 46
                     self.functionDefinition()
                     pass
 
                 elif la_ == 4:
-                    self.state = 33
+                    self.state = 47
                     self.statement()
                     pass
 
 
-                self.state = 38
+                self.state = 52
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 39
+            self.state = 53
             self.match(CppParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -311,13 +352,13 @@ class CppParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_preprocessorDirective)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 41
+            self.state = 55
             self.match(CppParser.INCLUDE)
-            self.state = 42
+            self.state = 56
             self.match(CppParser.LT)
-            self.state = 43
+            self.state = 57
             self.match(CppParser.ID)
-            self.state = 44
+            self.state = 58
             self.match(CppParser.GT)
         except RecognitionException as re:
             localctx.exception = re
@@ -351,6 +392,9 @@ class CppParser ( Parser ):
         def RBRACE(self):
             return self.getToken(CppParser.RBRACE, 0)
 
+        def SEMI(self):
+            return self.getToken(CppParser.SEMI, 0)
+
         def getRuleIndex(self):
             return CppParser.RULE_classDeclaration
 
@@ -377,16 +421,18 @@ class CppParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_classDeclaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 46
+            self.state = 60
             self.match(CppParser.CLASS)
-            self.state = 47
+            self.state = 61
             self.match(CppParser.ID)
-            self.state = 48
+            self.state = 62
             self.match(CppParser.LBRACE)
-            self.state = 49
+            self.state = 63
             self.classBody()
-            self.state = 50
+            self.state = 64
             self.match(CppParser.RBRACE)
+            self.state = 65
+            self.match(CppParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -402,6 +448,13 @@ class CppParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def accessModifier(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CppParser.AccessModifierContext)
+            else:
+                return self.getTypedRuleContext(CppParser.AccessModifierContext,i)
+
 
         def methodDeclaration(self, i:int=None):
             if i is None:
@@ -444,27 +497,102 @@ class CppParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 56
+            self.state = 72
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4294971380) != 0):
-                self.state = 54
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 137438957564) != 0):
+                self.state = 70
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
                 if la_ == 1:
-                    self.state = 52
-                    self.methodDeclaration()
+                    self.state = 67
+                    self.accessModifier()
                     pass
 
                 elif la_ == 2:
-                    self.state = 53
+                    self.state = 68
+                    self.methodDeclaration()
+                    pass
+
+                elif la_ == 3:
+                    self.state = 69
                     self.variableDeclaration()
                     pass
 
 
-                self.state = 58
+                self.state = 74
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class AccessModifierContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def PUBLIC(self):
+            return self.getToken(CppParser.PUBLIC, 0)
+
+        def COLON(self):
+            return self.getToken(CppParser.COLON, 0)
+
+        def PRIVATE(self):
+            return self.getToken(CppParser.PRIVATE, 0)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_accessModifier
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAccessModifier" ):
+                listener.enterAccessModifier(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAccessModifier" ):
+                listener.exitAccessModifier(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAccessModifier" ):
+                return visitor.visitAccessModifier(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def accessModifier(self):
+
+        localctx = CppParser.AccessModifierContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_accessModifier)
+        try:
+            self.state = 79
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [2]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 75
+                self.match(CppParser.PUBLIC)
+                self.state = 76
+                self.match(CppParser.COLON)
+                pass
+            elif token in [3]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 77
+                self.match(CppParser.PRIVATE)
+                self.state = 78
+                self.match(CppParser.COLON)
+                pass
+            else:
+                raise NoViableAltException(self)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -538,47 +666,47 @@ class CppParser ( Parser ):
     def methodDeclaration(self):
 
         localctx = CppParser.MethodDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_methodDeclaration)
+        self.enterRule(localctx, 10, self.RULE_methodDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 60
+            self.state = 82
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==2:
-                self.state = 59
+                self.state = 81
                 self.match(CppParser.PUBLIC)
 
 
-            self.state = 62
+            self.state = 84
             self.type_()
-            self.state = 63
+            self.state = 85
             self.match(CppParser.ID)
-            self.state = 64
+            self.state = 86
             self.match(CppParser.LPAREN)
-            self.state = 66
+            self.state = 88
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4294971376) != 0):
-                self.state = 65
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 137438957552) != 0):
+                self.state = 87
                 self.parameterList()
 
 
-            self.state = 68
+            self.state = 90
             self.match(CppParser.RPAREN)
-            self.state = 69
+            self.state = 91
             self.match(CppParser.LBRACE)
-            self.state = 73
+            self.state = 95
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==12 or _la==32:
-                self.state = 70
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 137438961648) != 0):
+                self.state = 92
                 self.statement()
-                self.state = 75
+                self.state = 97
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 76
+            self.state = 98
             self.match(CppParser.RBRACE)
         except RecognitionException as re:
             localctx.exception = re
@@ -649,39 +777,39 @@ class CppParser ( Parser ):
     def functionDefinition(self):
 
         localctx = CppParser.FunctionDefinitionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_functionDefinition)
+        self.enterRule(localctx, 12, self.RULE_functionDefinition)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 78
+            self.state = 100
             self.type_()
-            self.state = 79
+            self.state = 101
             self.match(CppParser.ID)
-            self.state = 80
+            self.state = 102
             self.match(CppParser.LPAREN)
-            self.state = 82
+            self.state = 104
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4294971376) != 0):
-                self.state = 81
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 137438957552) != 0):
+                self.state = 103
                 self.parameterList()
 
 
-            self.state = 84
+            self.state = 106
             self.match(CppParser.RPAREN)
-            self.state = 85
+            self.state = 107
             self.match(CppParser.LBRACE)
-            self.state = 89
+            self.state = 111
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==12 or _la==32:
-                self.state = 86
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 137438961648) != 0):
+                self.state = 108
                 self.statement()
-                self.state = 91
+                self.state = 113
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 92
+            self.state = 114
             self.match(CppParser.RBRACE)
         except RecognitionException as re:
             localctx.exception = re
@@ -735,21 +863,21 @@ class CppParser ( Parser ):
     def parameterList(self):
 
         localctx = CppParser.ParameterListContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_parameterList)
+        self.enterRule(localctx, 14, self.RULE_parameterList)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 94
+            self.state = 116
             self.variableDeclaration()
-            self.state = 99
+            self.state = 121
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==23:
-                self.state = 95
+                self.state = 117
                 self.match(CppParser.COMMA)
-                self.state = 96
+                self.state = 118
                 self.variableDeclaration()
-                self.state = 101
+                self.state = 123
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -822,23 +950,23 @@ class CppParser ( Parser ):
     def type_(self):
 
         localctx = CppParser.TypeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_type)
+        self.enterRule(localctx, 16, self.RULE_type)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 104
+            self.state = 126
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==11:
-                self.state = 102
+                self.state = 124
                 self.match(CppParser.STD)
-                self.state = 103
+                self.state = 125
                 self.match(CppParser.COLONCOLON)
 
 
-            self.state = 106
+            self.state = 128
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 4294969328) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 137438955504) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -896,21 +1024,21 @@ class CppParser ( Parser ):
     def variableDeclaration(self):
 
         localctx = CppParser.VariableDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_variableDeclaration)
+        self.enterRule(localctx, 18, self.RULE_variableDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 108
+            self.state = 130
             self.type_()
-            self.state = 109
+            self.state = 131
             self.match(CppParser.ID)
-            self.state = 112
+            self.state = 134
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==25:
-                self.state = 110
+                self.state = 132
                 self.match(CppParser.ASSIGN)
-                self.state = 111
+                self.state = 133
                 self.expression()
 
 
@@ -945,6 +1073,10 @@ class CppParser ( Parser ):
             return self.getTypedRuleContext(CppParser.AssignementContext,0)
 
 
+        def variableDeclaration(self):
+            return self.getTypedRuleContext(CppParser.VariableDeclarationContext,0)
+
+
         def RETURN(self):
             return self.getToken(CppParser.RETURN, 0)
 
@@ -975,42 +1107,57 @@ class CppParser ( Parser ):
     def statement(self):
 
         localctx = CppParser.StatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_statement)
+        self.enterRule(localctx, 20, self.RULE_statement)
+        self._la = 0 # Token type
         try:
-            self.state = 127
+            self.state = 153
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 114
+                self.state = 136
                 self.methodCall()
-                self.state = 115
+                self.state = 137
                 self.match(CppParser.SEMI)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 117
+                self.state = 139
                 self.objectDeclaration()
-                self.state = 118
+                self.state = 140
                 self.match(CppParser.SEMI)
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 120
+                self.state = 142
                 self.assignement()
-                self.state = 121
+                self.state = 143
                 self.match(CppParser.SEMI)
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 123
+                self.state = 145
+                self.variableDeclaration()
+                self.state = 146
+                self.match(CppParser.SEMI)
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 148
                 self.match(CppParser.RETURN)
-                self.state = 124
-                self.expression()
-                self.state = 125
+                self.state = 150
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 962073722880) != 0):
+                    self.state = 149
+                    self.expression()
+
+
+                self.state = 152
                 self.match(CppParser.SEMI)
                 pass
 
@@ -1073,27 +1220,27 @@ class CppParser ( Parser ):
     def methodCall(self):
 
         localctx = CppParser.MethodCallContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_methodCall)
+        self.enterRule(localctx, 22, self.RULE_methodCall)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 129
+            self.state = 155
             self.match(CppParser.ID)
-            self.state = 130
+            self.state = 156
             self.match(CppParser.DOT)
-            self.state = 131
+            self.state = 157
             self.match(CppParser.ID)
-            self.state = 132
+            self.state = 158
             self.match(CppParser.LPAREN)
-            self.state = 134
+            self.state = 160
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 30064771072) != 0):
-                self.state = 133
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 962073722880) != 0):
+                self.state = 159
                 self.argumentList()
 
 
-            self.state = 136
+            self.state = 162
             self.match(CppParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -1147,21 +1294,21 @@ class CppParser ( Parser ):
     def argumentList(self):
 
         localctx = CppParser.ArgumentListContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_argumentList)
+        self.enterRule(localctx, 24, self.RULE_argumentList)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 138
+            self.state = 164
             self.expression()
-            self.state = 143
+            self.state = 169
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==23:
-                self.state = 139
+                self.state = 165
                 self.match(CppParser.COMMA)
-                self.state = 140
+                self.state = 166
                 self.expression()
-                self.state = 145
+                self.state = 171
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1181,14 +1328,9 @@ class CppParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ID(self):
-            return self.getToken(CppParser.ID, 0)
+        def shiftExpression(self):
+            return self.getTypedRuleContext(CppParser.ShiftExpressionContext,0)
 
-        def NUMBER(self):
-            return self.getToken(CppParser.NUMBER, 0)
-
-        def STRING_LITERAL(self):
-            return self.getToken(CppParser.STRING_LITERAL, 0)
 
         def getRuleIndex(self):
             return CppParser.RULE_expression
@@ -1213,17 +1355,469 @@ class CppParser ( Parser ):
     def expression(self):
 
         localctx = CppParser.ExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_expression)
+        self.enterRule(localctx, 26, self.RULE_expression)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 172
+            self.shiftExpression()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ShiftExpressionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def additiveExpression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CppParser.AdditiveExpressionContext)
+            else:
+                return self.getTypedRuleContext(CppParser.AdditiveExpressionContext,i)
+
+
+        def LEFT_SHIFT(self, i:int=None):
+            if i is None:
+                return self.getTokens(CppParser.LEFT_SHIFT)
+            else:
+                return self.getToken(CppParser.LEFT_SHIFT, i)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_shiftExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterShiftExpression" ):
+                listener.enterShiftExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitShiftExpression" ):
+                listener.exitShiftExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitShiftExpression" ):
+                return visitor.visitShiftExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def shiftExpression(self):
+
+        localctx = CppParser.ShiftExpressionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 28, self.RULE_shiftExpression)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 146
+            self.state = 174
+            self.additiveExpression()
+            self.state = 179
+            self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 30064771072) != 0)):
-                self._errHandler.recoverInline(self)
+            while _la==33:
+                self.state = 175
+                self.match(CppParser.LEFT_SHIFT)
+                self.state = 176
+                self.additiveExpression()
+                self.state = 181
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class AdditiveExpressionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def multiplicativeExpression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CppParser.MultiplicativeExpressionContext)
             else:
-                self._errHandler.reportMatch(self)
-                self.consume()
+                return self.getTypedRuleContext(CppParser.MultiplicativeExpressionContext,i)
+
+
+        def PLUS(self, i:int=None):
+            if i is None:
+                return self.getTokens(CppParser.PLUS)
+            else:
+                return self.getToken(CppParser.PLUS, i)
+
+        def MINUS(self, i:int=None):
+            if i is None:
+                return self.getTokens(CppParser.MINUS)
+            else:
+                return self.getToken(CppParser.MINUS, i)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_additiveExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAdditiveExpression" ):
+                listener.enterAdditiveExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAdditiveExpression" ):
+                listener.exitAdditiveExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAdditiveExpression" ):
+                return visitor.visitAdditiveExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def additiveExpression(self):
+
+        localctx = CppParser.AdditiveExpressionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 30, self.RULE_additiveExpression)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 182
+            self.multiplicativeExpression()
+            self.state = 187
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==26 or _la==27:
+                self.state = 183
+                _la = self._input.LA(1)
+                if not(_la==26 or _la==27):
+                    self._errHandler.recoverInline(self)
+                else:
+                    self._errHandler.reportMatch(self)
+                    self.consume()
+                self.state = 184
+                self.multiplicativeExpression()
+                self.state = 189
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class MultiplicativeExpressionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def postfixExpression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CppParser.PostfixExpressionContext)
+            else:
+                return self.getTypedRuleContext(CppParser.PostfixExpressionContext,i)
+
+
+        def STAR(self, i:int=None):
+            if i is None:
+                return self.getTokens(CppParser.STAR)
+            else:
+                return self.getToken(CppParser.STAR, i)
+
+        def DIV(self, i:int=None):
+            if i is None:
+                return self.getTokens(CppParser.DIV)
+            else:
+                return self.getToken(CppParser.DIV, i)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_multiplicativeExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMultiplicativeExpression" ):
+                listener.enterMultiplicativeExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMultiplicativeExpression" ):
+                listener.exitMultiplicativeExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMultiplicativeExpression" ):
+                return visitor.visitMultiplicativeExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def multiplicativeExpression(self):
+
+        localctx = CppParser.MultiplicativeExpressionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 32, self.RULE_multiplicativeExpression)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 190
+            self.postfixExpression()
+            self.state = 195
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==28 or _la==29:
+                self.state = 191
+                _la = self._input.LA(1)
+                if not(_la==28 or _la==29):
+                    self._errHandler.recoverInline(self)
+                else:
+                    self._errHandler.reportMatch(self)
+                    self.consume()
+                self.state = 192
+                self.postfixExpression()
+                self.state = 197
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class PostfixExpressionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def primaryExpression(self):
+            return self.getTypedRuleContext(CppParser.PrimaryExpressionContext,0)
+
+
+        def postfixOp(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CppParser.PostfixOpContext)
+            else:
+                return self.getTypedRuleContext(CppParser.PostfixOpContext,i)
+
+
+        def getRuleIndex(self):
+            return CppParser.RULE_postfixExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPostfixExpression" ):
+                listener.enterPostfixExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPostfixExpression" ):
+                listener.exitPostfixExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPostfixExpression" ):
+                return visitor.visitPostfixExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def postfixExpression(self):
+
+        localctx = CppParser.PostfixExpressionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 34, self.RULE_postfixExpression)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 198
+            self.primaryExpression()
+            self.state = 202
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==24 or _la==32:
+                self.state = 199
+                self.postfixOp()
+                self.state = 204
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class PostfixOpContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def COLONCOLON(self):
+            return self.getToken(CppParser.COLONCOLON, 0)
+
+        def ID(self):
+            return self.getToken(CppParser.ID, 0)
+
+        def DOT(self):
+            return self.getToken(CppParser.DOT, 0)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_postfixOp
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPostfixOp" ):
+                listener.enterPostfixOp(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPostfixOp" ):
+                listener.exitPostfixOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPostfixOp" ):
+                return visitor.visitPostfixOp(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def postfixOp(self):
+
+        localctx = CppParser.PostfixOpContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 36, self.RULE_postfixOp)
+        try:
+            self.state = 209
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [32]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 205
+                self.match(CppParser.COLONCOLON)
+                self.state = 206
+                self.match(CppParser.ID)
+                pass
+            elif token in [24]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 207
+                self.match(CppParser.DOT)
+                self.state = 208
+                self.match(CppParser.ID)
+                pass
+            else:
+                raise NoViableAltException(self)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class PrimaryExpressionContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def ID(self):
+            return self.getToken(CppParser.ID, 0)
+
+        def STRING_LITERAL(self):
+            return self.getToken(CppParser.STRING_LITERAL, 0)
+
+        def NUMBER(self):
+            return self.getToken(CppParser.NUMBER, 0)
+
+        def LPAREN(self):
+            return self.getToken(CppParser.LPAREN, 0)
+
+        def expression(self):
+            return self.getTypedRuleContext(CppParser.ExpressionContext,0)
+
+
+        def RPAREN(self):
+            return self.getToken(CppParser.RPAREN, 0)
+
+        def getRuleIndex(self):
+            return CppParser.RULE_primaryExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPrimaryExpression" ):
+                listener.enterPrimaryExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPrimaryExpression" ):
+                listener.exitPrimaryExpression(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrimaryExpression" ):
+                return visitor.visitPrimaryExpression(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def primaryExpression(self):
+
+        localctx = CppParser.PrimaryExpressionContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 38, self.RULE_primaryExpression)
+        try:
+            self.state = 218
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [37]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 211
+                self.match(CppParser.ID)
+                pass
+            elif token in [39]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 212
+                self.match(CppParser.STRING_LITERAL)
+                pass
+            elif token in [38]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 213
+                self.match(CppParser.NUMBER)
+                pass
+            elif token in [20]:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 214
+                self.match(CppParser.LPAREN)
+                self.state = 215
+                self.expression()
+                self.state = 216
+                self.match(CppParser.RPAREN)
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1273,14 +1867,14 @@ class CppParser ( Parser ):
     def assignement(self):
 
         localctx = CppParser.AssignementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_assignement)
+        self.enterRule(localctx, 40, self.RULE_assignement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
+            self.state = 220
             self.match(CppParser.ID)
-            self.state = 149
+            self.state = 221
             self.match(CppParser.ASSIGN)
-            self.state = 150
+            self.state = 222
             self.expression()
         except RecognitionException as re:
             localctx.exception = re
@@ -1327,12 +1921,12 @@ class CppParser ( Parser ):
     def objectDeclaration(self):
 
         localctx = CppParser.ObjectDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_objectDeclaration)
+        self.enterRule(localctx, 42, self.RULE_objectDeclaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 224
             self.match(CppParser.ID)
-            self.state = 153
+            self.state = 225
             self.match(CppParser.ID)
         except RecognitionException as re:
             localctx.exception = re
