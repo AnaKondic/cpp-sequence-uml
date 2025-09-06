@@ -18,7 +18,13 @@ classDeclaration
     ;
 
 classBody
-    : (accessModifier | methodDeclaration | variableDeclaration)*
+    : classBodyElement*
+    ;
+
+classBodyElement
+    : accessModifier           // public: ili private:
+    | methodDefinition        // metode
+    | variableDeclaration SEMI      
     ;
 
 // Pristupni modifikator
@@ -28,7 +34,7 @@ accessModifier
     ;
 
 // Deklaracija metode 
-methodDeclaration 
+methodDefinition
     : PUBLIC? type ID LPAREN parameterList? RPAREN LBRACE statement* RBRACE
     ;
 
@@ -49,12 +55,13 @@ type
 
 // Deklaracija promjenljive
 variableDeclaration
-    : type ID (ASSIGN expression)?
+    : type ID (ASSIGN expression)? 
     ;
 
 // Pravilo za naredbu
 statement
     : methodCall SEMI
+    | functionCall SEMI
     | objectDeclaration SEMI
     | assignement SEMI
     | variableDeclaration SEMI
@@ -70,18 +77,11 @@ argumentList
     : expression (COMMA expression)*
     ;
 
-// Pravilo za izraze (hijerarhijski)
-// expression
-//     : 
-//     | expression PLUS expression
-//     | expression MINUS expression
-//     | expression STAR expression
-//     | expression LEFT_SHIFT expression
-//     | expression COLONCOLON expression
-//     | ID
-//     | NUMBER
-//     | STRING_LITERAL
-//     ;
+// Poziv funkcije 
+functionCall
+    : ID LPAREN argumentList? RPAREN
+    ;
+
 
 expression
     : shiftExpression

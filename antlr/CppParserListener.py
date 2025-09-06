@@ -44,6 +44,15 @@ class CppParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CppParser#classBodyElement.
+    def enterClassBodyElement(self, ctx:CppParser.ClassBodyElementContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#classBodyElement.
+    def exitClassBodyElement(self, ctx:CppParser.ClassBodyElementContext):
+        pass
+
+
     # Enter a parse tree produced by CppParser#accessModifier.
     def enterAccessModifier(self, ctx:CppParser.AccessModifierContext):
         pass
@@ -53,12 +62,12 @@ class CppParserListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CppParser#methodDeclaration.
-    def enterMethodDeclaration(self, ctx:CppParser.MethodDeclarationContext):
+    # Enter a parse tree produced by CppParser#methodDefinition.
+    def enterMethodDefinition(self, ctx:CppParser.MethodDefinitionContext):
         pass
 
-    # Exit a parse tree produced by CppParser#methodDeclaration.
-    def exitMethodDeclaration(self, ctx:CppParser.MethodDeclarationContext):
+    # Exit a parse tree produced by CppParser#methodDefinition.
+    def exitMethodDefinition(self, ctx:CppParser.MethodDefinitionContext):
         pass
 
 
@@ -122,6 +131,15 @@ class CppParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by CppParser#argumentList.
     def exitArgumentList(self, ctx:CppParser.ArgumentListContext):
+        pass
+
+
+    # Enter a parse tree produced by CppParser#functionCall.
+    def enterFunctionCall(self, ctx:CppParser.FunctionCallContext):
+        pass
+
+    # Exit a parse tree produced by CppParser#functionCall.
+    def exitFunctionCall(self, ctx:CppParser.FunctionCallContext):
         pass
 
 

@@ -1,0 +1,10 @@
+class Printer {
+public:
+    void print(string msg) { }
+};
+
+int main() {
+    Printer p;
+    p.print("Hello");
+    return 0;
+}

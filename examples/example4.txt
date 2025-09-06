@@ -1,0 +1,18 @@
+class Logger {
+public:
+    void log(string msg) { }
+};
+
+class Worker {
+public:
+    void run(Logger l) {
+        l.log("Start work");
+    }
+};
+
+int main() {
+    Logger lg;
+    Worker w;
+    w.run(lg);
+    return 0;
+}

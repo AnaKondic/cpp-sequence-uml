@@ -1,0 +1,30 @@
+class Book {
+public:
+    void read() {}
+};
+
+class Library {
+public:
+    void logVisit() {}
+};
+
+class Person {
+public:
+    Book book;
+    Library library;
+
+    void study() {
+        book.read();
+    }
+
+    void visitLibrary() {
+        study();
+        library.logVisit();
+    }
+};
+
+int main() {
+    Person alice;
+    alice.visitLibrary();
+    return 0;
+}

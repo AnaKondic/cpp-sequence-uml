@@ -1,0 +1,18 @@
+class Database {
+public:
+    void query(string sql) { }
+};
+
+class Service {
+public:
+    void getData() {
+        Database db;
+        db.query("SELECT * FROM users");
+    }
+};
+
+int main() {
+    Service s;
+    s.getData();
+    return 0;
+}

@@ -7,6 +7,7 @@ import subprocess
 from antlr4 import *
 from antlr.CppLexer import CppLexer
 from antlr.CppParser import CppParser
+from semantic_analyzer import SemanticAnalyzer
 from uml_visitor import UMLSequenceVisitor  
 
 from antlr4.error.ErrorListener import ErrorListener
@@ -36,12 +37,16 @@ def parse_cpp_file(input_file):
 
     tree = parser.program() # pocetno pravilo
 
-    visitor = UMLSequenceVisitor()
+    sema = SemanticAnalyzer()
+    sema.visit(tree)
+
+    visitor = UMLSequenceVisitor(sema.symbol_table)
     visitor.visit(tree)
+
     return visitor
 
 if __name__ == "__main__":
-    visitor = parse_cpp_file("examples/example1.txt")
+    visitor = parse_cpp_file("examples/example5.txt")
     print(visitor.known_objects)
     uml_code = visitor.uml.generate()
 

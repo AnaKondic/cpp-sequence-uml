@@ -29,13 +29,18 @@ class CppParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CppParser#classBodyElement.
+    def visitClassBodyElement(self, ctx:CppParser.ClassBodyElementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CppParser#accessModifier.
     def visitAccessModifier(self, ctx:CppParser.AccessModifierContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CppParser#methodDeclaration.
-    def visitMethodDeclaration(self, ctx:CppParser.MethodDeclarationContext):
+    # Visit a parse tree produced by CppParser#methodDefinition.
+    def visitMethodDefinition(self, ctx:CppParser.MethodDefinitionContext):
         return self.visitChildren(ctx)
 
 
@@ -71,6 +76,11 @@ class CppParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CppParser#argumentList.
     def visitArgumentList(self, ctx:CppParser.ArgumentListContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CppParser#functionCall.
+    def visitFunctionCall(self, ctx:CppParser.FunctionCallContext):
         return self.visitChildren(ctx)
 
 
