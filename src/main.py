@@ -45,16 +45,17 @@ def parse_cpp_file(input_file):
 
     return visitor
 
+def generate_uml(plantuml_code, output_file):
+    temp_file = "temp.uml"
+    with open(temp_file, "w") as f:
+        f.write(plantuml_code)
+    subprocess.run(["java", "-jar", "plantuml.jar", temp_file])
+    print(f"Diagram generated: {output_file}")
+
+
 if __name__ == "__main__":
     visitor = parse_cpp_file("examples/example5.txt")
     print(visitor.known_objects)
     uml_code = visitor.uml.generate()
 
-    # Snimanje UML koda u fajl
-    with open("diagram.uml", "w") as f:
-        f.write(uml_code)
-    
-    # PlantUML generise PNG
-    subprocess.run(["java", "-jar", "plantuml.jar", "diagram.uml"])
-
-    print("UML fajl je generisan: diagram.uml")
+    generate_uml(uml_code, "temp.png")

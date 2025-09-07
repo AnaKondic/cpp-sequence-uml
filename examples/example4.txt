@@ -1,18 +1,18 @@
 class Logger {
 public:
-    void log(string msg) { }
+    void logMessage(string message) { }
 };
 
-class Worker {
+class Employee {
 public:
-    void run(Logger l) {
-        l.log("Start work");
+    void performTask(Logger logger) {
+        logger.logMessage("Task started");
     }
 };
 
 int main() {
-    Logger lg;
-    Worker w;
-    w.run(lg);
+    Logger officeLogger;
+    Employee alice;
+    alice.performTask(officeLogger);
     return 0;
 }

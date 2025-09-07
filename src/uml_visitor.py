@@ -70,6 +70,7 @@ class UMLSequenceVisitor(CppParserVisitor):
             return None
 
         class_name = self.known_objects[object_name]
+        
         # provjera da li metoda postoji u klasi
         method_list = [m["name"] for m in self.symbol_table.get(class_name, {}).get("methods", [])]
         if method_name not in method_list:
