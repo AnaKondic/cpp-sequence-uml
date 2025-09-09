@@ -5,8 +5,7 @@ class UMLGenerator:
         self.participants = [] # cuva redoslijed
         self.participants_set = set()
         self.call_stack = [] # prati aktivacije
-        #self.add_participant("Main")  # Main uvek prvi
-    
+        
     def add_participant(self, name):
         primitives = {"int", "string", "float", "double", "char", "bool", "void"}
         if name.lower() in primitives:

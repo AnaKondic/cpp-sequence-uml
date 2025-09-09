@@ -15,7 +15,12 @@ class UMLSequenceVisitor(CppParserVisitor):
     # Program root
     def visitProgram(self, ctx:CppParser.ProgramContext):
         print("Starting UML generation from program root...")
-        return self.visitChildren(ctx)
+        # Pronađi main funkciju
+        for func_ctx in ctx.functionDefinition():
+             if func_ctx.ID().getText() == "main":
+                self.visitFunctionDefinition(func_ctx)
+                break
+        return None
     
     # Posjeta deklaraciji klase
     def visitClassDeclaration(self, ctx:CppParser.ClassDeclarationContext):
@@ -50,11 +55,26 @@ class UMLSequenceVisitor(CppParserVisitor):
         method_name = ctx.ID().getText()
         class_name = self.current_class if self.current_class else "UnknownClass"
 
-        print(f"Method declaration: {method_name}")
+         # Privremeni scope za ovu metodu
+        old_known_objects = self.known_objects.copy()
+
+        # Dodaj atribute klase u poznate objekte
+        if self.current_class in self.symbol_table:
+            for var in self.symbol_table[self.current_class]["variables"]:
+                self.known_objects[var["name"]] = var["type"]
         
+        print(f"Method definition: {method_name}")
+
         self.call_stack.append(class_name)
         self.visitChildren(ctx)
         self.call_stack.pop()
+
+        if self.call_stack:
+            caller = self.call_stack[-1]  
+            self.uml.add_return(caller, class_name, "void")
+
+        self.known_objects = old_known_objects
+
         return None
 
     # Poziv metode: obj.method(...)
@@ -79,12 +99,41 @@ class UMLSequenceVisitor(CppParserVisitor):
         caller = self.call_stack[-1] if self.call_stack else "Main"
         self.uml.add_call(caller, class_name, f"{method_name}{args}")
         
-        self.call_stack.append(class_name)
-        self.visitChildren(ctx)
-        self.call_stack.pop()
-        
+        methods = [m for m in self.symbol_table[class_name]["methods"] if m["name"] == method_name]
+        for m in methods:
+            self.current_class = class_name
+            self.call_stack.append(caller)
+            self.visitMethodDefinition(m["ctx"])  
+            self.call_stack.pop()
+
         return None
     
+    def visitFunctionCall(self, ctx:CppParser.FunctionCallContext):
+        func_name = ctx.ID().getText()
+
+        if self.current_class:
+            # metoda trenutne klase
+            methods = [m for m in self.symbol_table[self.current_class]["methods"] if m["name"] == func_name]
+            if not methods:
+                print(f"Greška: metoda {func_name} nije deklarisana (linija {ctx.start.line})")
+            else:
+                caller = self.call_stack[-1] if self.call_stack else "Main"
+                self.uml.add_call(caller, self.current_class, func_name + "()")
+                for m in methods:
+                    self.current_class, old_class = self.current_class, self.current_class
+                    self.call_stack.append(self.current_class)
+                    self.visitMethodDefinition(m["ctx"])
+                    self.call_stack.pop()
+                    self.current_class = old_class
+        else:
+            # globalna funkcija
+            if func_name not in self.symbol_table:
+                print(f"Greška: funkcija {func_name} nije deklarisana (linija {ctx.start.line})")
+            else:
+                self.visitFunctionDefinition(self.symbol_table[func_name]["methods"][0]["ctx"])
+
+        return self.visitChildren(ctx)
+
     # Parametri funkcije/metode
     def visitParameterList(self, ctx:CppParser.ParameterListContext):
         for param in ctx.variableDeclaration():
@@ -102,6 +151,7 @@ class UMLSequenceVisitor(CppParserVisitor):
             print(f"Uknown class: {obj_type} (line {ctx.start.line})")
         else:
             # dodaj objekat u poznate objekte
+            print(f"Object declared: {obj_name} of type {obj_type}")
             self.known_objects[obj_name] = obj_type
         
         return None
@@ -119,11 +169,12 @@ class UMLSequenceVisitor(CppParserVisitor):
     def visitStatement(self, ctx:CppParser.StatementContext):
         if ctx.RETURN():
             caller = self.call_stack[-1] if self.call_stack else "Main"
-            if self.uml.call_stack:
-                callee = self.uml.call_stack[-1]
+            if len(self.call_stack) > 1:
+                callee = self.call_stack[-1]           # metoda koja vraća
+                caller_of_callee = self.call_stack[-2] # stvarni pozivač
                 expr = ctx.expression()
-                value = expr.getText() if expr is not None else "return"
-                self.uml.add_return(caller, callee, value)
+                value = expr.getText() if expr else "void"
+                self.uml.add_return(caller_of_callee, callee, value)
         return self.visitChildren(ctx)
     
     # Naredba dodjele

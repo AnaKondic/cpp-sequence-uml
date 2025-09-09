@@ -1,8 +1,6 @@
 class Hello {
 public:
-    void sayHello() {
-        return;
-    }
+    void sayHello() {}
 };
 
 int main() {

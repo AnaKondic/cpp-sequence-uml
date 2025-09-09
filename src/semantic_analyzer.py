@@ -6,7 +6,6 @@ class SemanticAnalyzer(CppParserVisitor):
         # simbolicka tabela
         # struktura: {"ClassName": {"variables": [...], "methods": [...], "instances": [...] } }
         self.symbol_table = {}
-
         self.current_class = None
         self.current_function = None
         self.global_objects = {}
@@ -26,22 +25,14 @@ class SemanticAnalyzer(CppParserVisitor):
         self.current_class = class_name
 
         # Dodavanje svih atributa i metoda klase u tabelu simbola
-        for element in ctx.classBody().classBodyElement():
-            # varijable
-            var_decl = element.variableDeclaration() if hasattr(element, "variableDeclaration") else None
-            if var_decl:
-                type_name = var_decl.type_().getText()
-                var_name = var_decl.ID().getText()
-                self.symbol_table[class_name]["variables"].append({"type": type_name, "name": var_name})
-                self.global_objects[var_name] = type_name
-            # metode
-            method_decl = getattr(element, "methodDefinition", None)
-            if method_decl and callable(method_decl):
-                m_ctx = method_decl()
-                if m_ctx:
-                    method_name = m_ctx.ID().getText()
-                    self.symbol_table[class_name]["methods"].append({"name": method_name})
-
+        # for element in ctx.classBody().classBodyElement():
+        #     # varijable
+        #     var_decl = element.variableDeclaration() if hasattr(element, "variableDeclaration") else None
+        #     if var_decl:
+        #         type_name = var_decl.type_().getText()
+        #         var_name = var_decl.ID().getText()
+        #         self.symbol_table[class_name]["variables"].append({"type": type_name, "name": var_name})
+        #         self.global_objects[var_name] = type_name
         
         self.visitChildren(ctx)
         self.current_class = None
@@ -63,7 +54,8 @@ class SemanticAnalyzer(CppParserVisitor):
         method_entry = {
             "name": method_name,
             "return_type": return_type,
-            "params": []
+            "params": [],
+            "ctx": ctx 
         }
 
         # Paremetri metode
