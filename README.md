@@ -30,7 +30,9 @@ This system parses C++ code and generates visual UML sequence diagrams that illu
 
 ## Example
 Input C++ code with classes `Book`, `Library`, and `Person` produces a sequence diagram showing method call flow between `Main`, `Person`, `Book`, and `Library`.
-<img width="263" height="328" alt="image" src="https://github.com/user-attachments/assets/d3ef3e0f-32db-4cff-a69a-f1ce66406d3b" />
+<p align='center'>
+   <img width="263" height="328" alt="image" src="https://github.com/user-attachments/assets/d3ef3e0f-32db-4cff-a69a-f1ce66406d3b" />
+</p>
 
 ## Author
 Ana Kondić  
